@@ -13,7 +13,7 @@ Here is how to make whatsapp work under the wtsppi (beta) app.
 - Visual Studio Code (Recommended)
 
 ## Recommended Method: Self Host
-# Step1:
+# Step 1 | Pre-Setup:
 1. Download latest release from this repo.
 2. Create a directory on desktop, you can call whatever you want (for example: wawp7)
 3. copy and paste the files to it.
@@ -21,7 +21,7 @@ Here is how to make whatsapp work under the wtsppi (beta) app.
 5. type this in vscode cmd terminal: npm install whatsapp-web.js express qrcode-terminal
 6. type this in vscode cmd terminal after install these: node server.js --host 0.0.0.0
 
-# Step2 | Windows Phone side:
+# Step 2 | Windows Phone side:
 1. Install Wtspii.xap, included in this repo also, ensure your Windows Phone 7 device is jailbroken
 2. Ensure your phone shares same wifi as your self hosted pc.
 3. Opens Wtspii in your WP7, then, you should see 2 fields for logging in, one is phone, one is ip:port
