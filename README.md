@@ -39,7 +39,7 @@ Here is how to make whatsapp work under the wtsppi (beta) app.
 4. On your PC, open cmd and type "ipconfig" to find your ip address
 5. afterwards, on your phone, type your phone number withOUT a "+" symboal, example if your phone is +1 123-456-7890, it should be:
 11234567890
-6. for ip address field, type: <youripaddress>:3000
+6. for ip address field, type: (youripaddress):3000
 7. Go back to your pc, check terminal, there should be a # QRCode , which generated inside terminal, scan it.
 8. done! now just go ahead and login in wp7 app side, and enjoy your whatsapp!
 
