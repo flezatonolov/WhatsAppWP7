@@ -8,15 +8,12 @@ const port = process.env.PORT || 3000;
 let isConnected = false;
 let lastQRCode = '';
 
-// Add CORS headers
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });
-
-// REMOVED the problematic line: app.options('*', ...)
 
 const client = new Client({
     authStrategy: new LocalAuth(),
@@ -27,7 +24,6 @@ const client = new Client({
     }
 });
 
-// Show QR code in terminal
 client.on('qr', (qr) => {
     lastQRCode = qr;
     console.log('\n========== SCAN THIS QR CODE ==========');
@@ -80,7 +76,6 @@ app.get('/get-code', async (req, res) => {
         console.log('🔑 Pairing code generated:', code);
         console.log('📲 Enter this code in WhatsApp: Settings → Linked Devices → Link with phone number');
         
-        // Format the code with hyphens for readability
         let formattedCode = code;
         if (code && code.length === 8 && !code.includes('-')) {
             formattedCode = code.substring(0, 3) + '-' + code.substring(3, 6) + '-' + code.substring(6);
