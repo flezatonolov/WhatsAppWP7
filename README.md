@@ -1,4 +1,4 @@
-###WhatsAppWP7
+### WhatsAppWP7
 A fork of WojkalTech's WhatsApp webview client for Android 2.3+ that requires a self-hosted Node.js server to function.
 
 check his original version, credits all to him: https://github.com/WojkalTech/WhatsAppLegacy
