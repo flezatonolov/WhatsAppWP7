@@ -2,7 +2,8 @@
 A fork of WojkalTech's WhatsApp webview client for Android 2.3+ that requires a self-hosted Node.js server to function.
 
 check his original version, credits all to him: https://github.com/WojkalTech/WhatsAppLegacy
-support group: https://t.me/W7Mobile
+
+For WP7 users, we have a support group: https://t.me/W7Mobile
 
 ## Setup Guide (5~10 Minutes)
 Here is how to make whatsapp work under the wtsppi (beta) app.
